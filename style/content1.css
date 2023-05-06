@@ -6,8 +6,6 @@
 }
 
 .introduction {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   background-color: var(--c12);
   justify-content: center;
   margin-left: auto;

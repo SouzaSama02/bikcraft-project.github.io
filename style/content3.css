@@ -1,0 +1,102 @@
+.content3-bg {
+  background: var(--c11);
+  box-shadow: inset 0 120px var(--w), inset 0 -120px var(--w);
+}
+
+.content3-full {
+  gap: 66px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+h3::before {
+  display: none;
+}
+
+.content3 {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.content3 > span {
+  display: block;
+  color: var(--c5);
+  text-transform: capitalize;
+}
+
+.content3-text h3 {
+  color: var(--w);
+  margin-top: 20px;
+}
+
+.content3-text p {
+  color: var(--c5);
+}
+
+h3 > span {
+  color: var(--p1);
+  display: inline-block;
+}
+
+.content3-text a {
+  color: var(--p1);
+  padding-bottom: 5px;
+  border-bottom: solid 2px #ffbb00;
+}
+
+.content3-text a:hover {
+  color: var(--w);
+}
+
+.tecnologia {
+  margin-top: 5rem;
+  gap: 40px;
+  padding-left: 0px;
+}
+
+.tecnologia-text h3 {
+  color: var(--w);
+  width: max-content;
+}
+
+.tecnologia-text p {
+  color: var(--c5);
+}
+
+.tecnologia-text img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.img-tech img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-position: left;
+}
+
+@media (max-width: 800px) {
+  .content3-bg {
+    box-shadow: initial;
+  }
+  .content3-full {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+  .content3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .tecnologia {
+    margin-top: 3rem;
+  }
+  .img-tech {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+}

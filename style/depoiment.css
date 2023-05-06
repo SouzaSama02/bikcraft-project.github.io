@@ -1,0 +1,12 @@
+.depoimento-bg {
+  background: var(--p1);
+}
+
+.depoimento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.text-cite {
+  align-self: end;
+}
