@@ -7,6 +7,57 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.depoimento img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .text-cite {
   align-self: end;
+  padding: 40px 40px 80px 80px;
+}
+
+.text-cite cite {
+  max-width: 32ch;
+  position: relative;
+}
+
+.text-cite p {
+  color: var(--p4);
+}
+
+.text-cite cite::before,
+.text-cite cite::after {
+  font-weight: 900;
+  color: var(--p2);
+  font-size: 50px;
+  position: absolute;
+}
+
+.text-cite cite::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+
+.text-cite cite::after {
+  content: "”";
+  bottom: 1px;
+  right: -50px;
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+  .depoimento img {
+    max-height: 200px;
+  }
+  .text-cite {
+    justify-self: center;
+    padding: 40px 20px;
+  }
+  .text-cite cite::after {
+    bottom: -20px;
+  }
 }
