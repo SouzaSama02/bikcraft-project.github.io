@@ -1,0 +1,90 @@
+.seguros-bg {
+  background: var(--c11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.seguros-bg > h2 {
+  margin-top: 0px;
+  color: var(--w);
+}
+
+.seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+  max-width: max-content;
+}
+
+.seguro-type {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  background-color: var(--c12);
+}
+
+.st1 {
+  color: var(--c8);
+}
+
+.st2 {
+  color: var(--p1);
+}
+
+.seguro-type {
+  padding: 2rem 3rem;
+}
+
+.seguro-type h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.seguro-type ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+}
+
+.seguro-type li {
+  display: flex;
+  align-items: center;
+}
+
+.seguro-type ul > li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url(../img/icones/lista.svg);
+  position: absolute;
+  left: -21px;
+}
+
+.seguro-type ul > li + li {
+  margin-top: 10px;
+}
+
+.seguro-type span,
+li {
+  color: var(--w);
+}
+
+.seguro-type span {
+  display: block;
+  text-align: right;
+}
+
+.seguro-type a {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    flex-wrap: wrap;
+  }
+}
