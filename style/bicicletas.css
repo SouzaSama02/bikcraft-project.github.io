@@ -1,0 +1,107 @@
+.bik-bg:nth-child(3) {
+  background-image: linear-gradient(to right, var(--w) 40%, var(--c11) 0);
+}
+
+.bik-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-content: start;
+}
+
+.bik-layout-img {
+  display: grid;
+}
+
+.bik-layout-img img {
+  grid-area: 1/1;
+}
+
+.bik-layout-img span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  display: inline-block;
+  background: var(--c12);
+  padding: 8px 16px 8px 8px;
+  color: var(--w);
+  border-radius: 5px 0px 0px 5px;
+}
+
+.bik-info {
+  /* max-width: 50ch; */
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.bik-info h2 {
+  margin-bottom: 20px;
+  padding: 0px;
+  color: var(--c10);
+}
+
+.bik-info h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  margin-bottom: 8px;
+}
+
+.bik-info h2,
+.bik-info p {
+  grid-column: 1/-1;
+}
+
+.bik-info p {
+  margin-bottom: 32px;
+  color: var(--c10);
+}
+
+.bik-info li {
+  color: var(--c10);
+  display: flex;
+  align-items: center;
+}
+
+.bik-info li + li {
+  margin-top: 16px;
+}
+
+.bik-info a {
+  place-self: end;
+}
+
+.bik-info li > img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .bik-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bik-bg:nth-child(3) {
+    background: var(--c11);
+  }
+}
+
+@media (max-width: 600px) {
+  .bik-info {
+    grid-template-columns: 1fr;
+  }
+  .bik-info ul {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+  .bik-info a {
+    place-self: start;
+  }
+}

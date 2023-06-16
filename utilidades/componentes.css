@@ -37,37 +37,56 @@
   background: var(--c11);
 }
 
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url("../img/icones/seta.svg");
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover:after {
+  transform: translateX(4px);
+}
+
 .ul-format {
   padding: 0px;
   list-style: none;
   text-decoration: none;
 }
 
-.termos-bg {
+.titulo-bg {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--c11);
 }
 
-.termos {
+.titulo {
   color: var(--w);
 }
 
-.termos p {
+.titulo p {
   margin-top: 0px;
   margin-bottom: 4px;
 }
 
-.termos h1 {
+.titulo h1 {
   margin: 0px;
 }
 
 @media (max-width: 800px) {
-  .termos-bg {
+  .titulo-bg {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  .termos p {
+  .titulo p {
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
