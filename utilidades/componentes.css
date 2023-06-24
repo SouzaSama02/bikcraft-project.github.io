@@ -30,7 +30,6 @@
 .botao.secundario {
   background: var(--c10);
   color: var(--w);
-  max-width: max-content;
 }
 
 .botao.secundario:hover {

@@ -31,25 +31,28 @@
 }
 
 .bik-info {
-  /* max-width: 50ch; */
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
 }
 
 .bik-info h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0px;
   color: var(--c10);
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.bik-info h2::before {
+.bik-info h2:before {
   content: "";
-  display: block;
+  display: inline-block;
   width: 12px;
   height: 8px;
   background-color: var(--p1);
   margin-bottom: 8px;
+  margin-right: 10px;
 }
 
 .bik-info h2,
@@ -58,7 +61,7 @@
 }
 
 .bik-info p {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
   color: var(--c10);
 }
 

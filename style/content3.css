@@ -33,9 +33,9 @@ h3::before {
   color: var(--c5);
 }
 
-h3 > span {
-  color: var(--p1);
+.content3-text h3 span {
   display: inline-block;
+  color: var(--p1);
 }
 
 .content3-text a {
