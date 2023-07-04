@@ -1,5 +1,6 @@
 @import url(general.css);
 @import url(../utilidades/componentes.css);
+@import url(../utilidades/formularios.css);
 @import url(../utilidades/cores.css);
 @import url(../utilidades/tipografia.css);
 @import url(header.css);
@@ -20,3 +21,17 @@
 
 @import url(vantagens.css);
 @import url(quiz.css);
+
+/* Pagina 04 Bicicleta */
+
+@import url(../bicicleta/bicicleta.css);
+@import url(../bicicleta/seguro-bicicleta.css);
+
+/* Pagina 05 Contato */
+
+@import url(../contato/contato.css);
+@import url(../contato/lojas.css);
+
+/* Pagina 06 Orcamento */
+
+@import url(../orcamento/orcamento.css);

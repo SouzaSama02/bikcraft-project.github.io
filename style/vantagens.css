@@ -22,12 +22,12 @@
   margin-bottom: 8px;
 }
 
-li img {
+.vant-info li img {
   width: 32px;
   height: 32px;
 }
 
-li h3 {
+.vant-info li h3 {
   color: var(--w);
 }
 

@@ -26,6 +26,10 @@ h2 span {
   overflow: auto;
 }
 
+#bicicletas .list-bike {
+  padding: 0px 0px 0px 0px;
+}
+
 .list-bike a {
   display: block;
 }
