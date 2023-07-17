@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Termos e condições">
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
-    <link rel="preload" href="style/style.css" as="style">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="preload" href="style/style.min.css" as="style">
+    <link rel="stylesheet" href="style/style.min.css">
     <title>Contato | Bikcraft</title>
+    <script>
+        document.documentElement.classList.add("js")
+    </script>
 </head>
 
 <body id="contato">
@@ -22,7 +25,7 @@
                 <ul class="menu font-1-m ul-format">
                     <li><a href="bicicletas.html">Bicicletas</a></li>
                     <li><a href="seguros.html">Seguros</a></li>
-                    <li><a href="./">Contato</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -82,7 +85,7 @@
                             <textarea rows="5" id="mensagem" name="texto" placeholder="O que você precisa"></textarea>
                         </div>
 
-                        <button class="botao col-2">enviar mensagem</button>
+                        <button type="submit" class="botao col-2">enviar mensagem</button>
                     </form>
                 </section>
             </div>
@@ -148,3 +151,7 @@
             <p class="font-2-m">Bikcraft Alguns direitos reservador.</p>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

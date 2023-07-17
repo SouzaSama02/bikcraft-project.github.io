@@ -36,7 +36,13 @@
   margin-top: 0.25rem;
 }
 
-.menu a:hover:after {
+.menu a:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.menu a:hover::after,
+.menu a.ativo::after {
   width: 100%;
   transition: 0.3s;
 }
